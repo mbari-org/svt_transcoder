@@ -49,7 +49,7 @@ RUN rm -f /opt/cvision/lib/*.a
 
 
 WORKDIR /bento4
-RUN wget http://zebulon.bok.net/Bento4/binaries/Bento4-SDK-1-6-0-632.x86_64-unknown-linux.zip
+RUN wget https://www.bok.net/Bento4/binaries/Bento4-SDK-1-6-0-632.x86_64-unknown-linux.zip
 COPY files/md5sum_checks.txt /tmp/checks.txt
 RUN md5sum --check /tmp/checks.txt
 RUN unzip Bento4-SDK-1-6-0-632.x86_64-unknown-linux.zip
